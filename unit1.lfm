@@ -1,0 +1,347 @@
+object Formutama: TFormutama
+  Left = 558
+  Height = 579
+  Top = 83
+  Width = 478
+  Caption = 'Kasir Rumah Makan Niti'
+  ClientHeight = 579
+  ClientWidth = 478
+  Color = clGradientInactiveCaption
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clMaroon
+  Font.Height = -27
+  Font.Name = 'Kristen ITC'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '2.0.12.0'
+  object Labelkasir: TLabel
+    Left = 16
+    Height = 25
+    Top = 8
+    Width = 97
+    Caption = 'KASIR ^^'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -21
+    Font.Name = 'Georgia'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Labelrmhmkn: TLabel
+    Left = 120
+    Height = 72
+    Top = 40
+    Width = 230
+    Caption = 'Rumah Makan'#13#10'        Niti'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -27
+    Font.Name = 'Lucida Calligraphy'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Labelmakanan: TLabel
+    Left = 16
+    Height = 20
+    Top = 152
+    Width = 82
+    Caption = 'Makanan : '
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBoxmakanan: TComboBox
+    Left = 104
+    Height = 25
+    Top = 152
+    Width = 152
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 17
+    Items.Strings = (
+      'Nasi Rames Ayam'
+      'Nasi Rames Telor'
+      'Nasi Pecel'
+      'Ikan Nila Bakar'
+      'Ikan Patin Bakar'
+    )
+    OnChange = ComboBoxmakananChange
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Edithargamakanan: TEdit
+    Left = 280
+    Height = 25
+    Top = 152
+    Width = 96
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnChange = EdithargamakananChange
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 192
+    Width = 76
+    Caption = 'Jumlah    :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Editjumlahmakanan: TEdit
+    Left = 104
+    Height = 25
+    Top = 192
+    Width = 100
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 256
+    Width = 77
+    Caption = 'Minuman :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object ComboBoxminuman: TComboBox
+    Left = 104
+    Height = 25
+    Top = 256
+    Width = 152
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 17
+    Items.Strings = (
+      'Es Teh'
+      'Es Jeruk'
+      'Es Sirup'
+      'Teh Hangat'
+      'Jeruk Hangat'
+      'Sirup Hangat'
+    )
+    OnChange = ComboBoxminumanChange
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Edithargaminuman: TEdit
+    Left = 280
+    Height = 25
+    Top = 256
+    Width = 96
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 20
+    Top = 296
+    Width = 76
+    Caption = 'Jumlah    :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Editjumlahminuman: TEdit
+    Left = 104
+    Height = 25
+    Top = 296
+    Width = 100
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Buttonhitung: TButton
+    Left = 17
+    Height = 81
+    Top = 384
+    Width = 82
+    Caption = 'Hitung'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonhitungClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Labelbayar: TLabel
+    Left = 216
+    Height = 20
+    Top = 376
+    Width = 95
+    Caption = 'Total Bayar :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edittotalbayar: TEdit
+    Left = 328
+    Height = 25
+    Top = 376
+    Width = 120
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Label4: TLabel
+    Left = 216
+    Height = 20
+    Top = 416
+    Width = 95
+    Caption = 'Bayar          :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Editbayar: TEdit
+    Left = 328
+    Height = 25
+    Top = 416
+    Width = 120
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Label5: TLabel
+    Left = 216
+    Height = 20
+    Top = 456
+    Width = 96
+    Caption = 'Kembali      :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Editkembali: TEdit
+    Left = 328
+    Height = 25
+    Top = 456
+    Width = 120
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -15
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Buttonhitungkembali: TButton
+    Left = 160
+    Height = 44
+    Top = 520
+    Width = 144
+    Caption = 'Hitung Kembali'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonhitungkembaliClick
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Buttonbayar: TButton
+    Left = 120
+    Height = 81
+    Top = 384
+    Width = 81
+    Caption = 'Bayar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -19
+    Font.Name = 'Lucida Bright'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ButtonbayarClick
+    ParentFont = False
+    TabOrder = 11
+  end
+end
